@@ -1,0 +1,8 @@
+component,gain,note
+unique_keys fix,+0.3690,collision-free vs aliased world: ceiling 0.631 -> 1.000 (N=1000)
+block scaling B=1->B=8 (d=512),+0.1610,stage2 round_robin: 0.017 -> 0.178
+block scaling B=8->B=32 (d=512),+0.7690,stage2 round_robin: 0.178 -> 0.947
+"proper vs elementwise_buggy cleanup (d=1024,N=200)",+0.1800,baseline: proper 0.29 vs buggy 0.11
+"resonator2 vs simple cleanup (d=2048,N=1000)",+0.0000,"tie: both 1.000; resonator uses 2.0 iters, simple 1.0 (b given)"
+resonator2_bundled vs simple_cleanup_bundled (N=1000),-0.3250,bundled memory: 0.0010 vs 0.3260
+FSRS weighting vs flat (step 2000),-0.2143,weighted 0.3418 vs flat 0.5561 (weighting hurts)

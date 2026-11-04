@@ -1,0 +1,18 @@
+{
+  "d": 1024,
+  "B": 32,
+  "strategy": "similarity",
+  "acc": 1.0,
+  "ms_per_query": 3.576,
+  "memory_MB": 8.4541,
+  "target_met": true,
+  "best_acc": 1.0,
+  "n_queries": 1000,
+  "ci95": 0.0,
+  "ceiling": 1.0,
+  "N": 1000,
+  "n_subjects": 50,
+  "acc_sweep_subset": 1.0,
+  "n_queries_sweep": 150,
+  "note": "unique (s,r) kalitlar bilan dunyo: har fakt alohida kalitda, strukturaviy shift yo'q. d=1024, B=32, similarity -> 100% (N=1000, 1000 so'rov). d=1024/B=16 (round_robin) 95.1%, d=512/B=32 97.1%. 90%+ maqsadga erishildi."
+}

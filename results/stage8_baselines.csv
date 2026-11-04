@@ -1,0 +1,21 @@
+task,method,d,B,recall,precision,top1_hit,ms_per_query,memory_MB,note
+partial_cue,inverted_index,1024,0,1.0,1.0,1.0,0.001006460006465204,0.084356,
+partial_cue,hash_kv,1024,0,0.0,0.0,0.0,0.0,0.137842,faqat to'liq kalit; qisman so'rovga qodir emas
+partial_cue,vsa_fhrr,1024,1,0.12300000000000001,0.12300000000000001,0.195,0.10335270999348722,8.200192,
+partial_cue,vsa_fhrr,1024,8,0.7029999999999998,0.7029999999999998,0.985,0.5193147899990436,8.257536,
+partial_cue,vsa_fhrr,1024,32,0.988,0.988,1.0,1.9508218749979278,8.454144,
+noisy_cue_10pct,exact_lookup,1024,0,0.0,0.0,0.0,0.0,0.137842,kalit mos kelmaydi -> miss; cue_sim=0.995
+noisy_cue_10pct,vsa_fhrr,1024,8,0.98,,0.98,0.5339039599857642,8.257536,cue_sim=0.995
+noisy_cue_10pct,vsa_fhrr,1024,32,1.0,,1.0,1.9607893749707728,8.454144,cue_sim=0.995
+noisy_cue_30pct,exact_lookup,1024,0,0.0,0.0,0.0,0.0,0.137842,kalit mos kelmaydi -> miss; cue_sim=0.958
+noisy_cue_30pct,vsa_fhrr,1024,8,0.975,,0.975,0.5337322950072121,8.257536,cue_sim=0.958
+noisy_cue_30pct,vsa_fhrr,1024,32,1.0,,1.0,1.9628679149900563,8.454144,cue_sim=0.958
+noisy_cue_50pct,exact_lookup,1024,0,0.0,0.0,0.0,0.0,0.137842,kalit mos kelmaydi -> miss; cue_sim=0.894
+noisy_cue_50pct,vsa_fhrr,1024,8,0.93,,0.93,0.6237247899844078,8.257536,cue_sim=0.894
+noisy_cue_50pct,vsa_fhrr,1024,32,1.0,,1.0,1.9484102050046204,8.454144,cue_sim=0.894
+noisy_cue_100pct,exact_lookup,1024,0,0.0,0.0,0.0,0.0,0.137842,kalit mos kelmaydi -> miss; cue_sim=0.707
+noisy_cue_100pct,vsa_fhrr,1024,8,0.605,,0.605,0.5348177050109371,8.257536,cue_sim=0.707
+noisy_cue_100pct,vsa_fhrr,1024,32,1.0,,1.0,1.946735420024197,8.454144,cue_sim=0.707
+noisy_cue_200pct,exact_lookup,1024,0,0.0,0.0,0.0,0.0,0.137842,kalit mos kelmaydi -> miss; cue_sim=0.447
+noisy_cue_200pct,vsa_fhrr,1024,8,0.125,,0.125,0.5284979150019353,8.257536,cue_sim=0.447
+noisy_cue_200pct,vsa_fhrr,1024,32,0.5,,0.5,1.9461504149876419,8.454144,cue_sim=0.447

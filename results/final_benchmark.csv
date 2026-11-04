@@ -1,0 +1,11 @@
+task,method,config,accuracy,ms_per_query,memory_MB,source
+store_retrieve,HRR (baseline),"d=1024,N=1000,B=1,proper",0.019,0.08515,7.8203,baseline_results.csv
+store_retrieve,FHRR,"d=1024,B=1",0.037,0.1802,8.2002,stage3_d_sweep.csv
+store_retrieve,FHRR,"d=1024,B=16",0.96,4.2651,8.3231,stage3_d_sweep.csv
+store_retrieve,FHRR,"d=1024,B=32",1.0,7.6381,8.4541,stage3_d_sweep.csv
+store_retrieve,dense,"d=2048,B=8,N=1000",0.9590,4.889,16.515,stage4_dense_vs_sparse.csv
+store_retrieve,sparse,"d=10000,k=100,N=1000",0.0010,0.152,10.010,stage4_dense_vs_sparse.csv
+forgetting,weighted (FSRS),step=2000,0.3418,n/a,n/a,stage6_weighted_vs_flat.csv
+forgetting,flat,step=2000,0.5561,n/a,n/a,stage6_weighted_vs_flat.csv
+factorization,resonator2,"d=2048,N=1000",1.0000,n/a,n/a,stage5_factorization.csv
+factorization,simple_cleanup,"d=2048,N=1000",1.0000,n/a,n/a,stage5_factorization.csv

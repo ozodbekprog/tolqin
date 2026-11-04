@@ -1,0 +1,3 @@
+method,accuracy,steps
+weighted,0.3418,2000
+flat,0.5561,2000
